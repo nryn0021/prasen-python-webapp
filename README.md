@@ -2,7 +2,21 @@
 
 This is a simple web application using [Python Flask](http://flask.pocoo.org/) and [MySQL](https://www.mysql.com/) database. 
 This is used in the demonstration of development of Ansible Playbooks.
-  
+  Choose a GitHub repository in which our Python Web App is Deployed
+ 
+Add our Python web application code: Push our Python web application code to the repository, including a requirements.txt file listing all the dependencies required by your application.
+ 
+Create a build.sh script: Create a build.sh script in the root of your repository. This script will contain the commands necessary to build our application. 
+ 
+ 
+Set up GitHub Actions: Create a directory named .github/workflows in the root of your repository. Inside this directory, create a YAML file to define your GitHub Actions workflow.
+
+Commit and push changes: Commit the changes you've made (including the build.sh script, requirements.txt, and the GitHub Actions workflow file) and push them to the main branch of your repository.
+With these steps, every time you push changes to the main branch of your repository, GitHub Actions will trigger the CI/CD pipeline defined in the ci-cd.yml file. This pipeline will:
+
+Install dependencies specified in requirements.txt.
+Execute the build.sh script.
+
   Below are the steps required to get this working on a base linux system.
   
   - Install all required dependencies
